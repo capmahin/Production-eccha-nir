@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e77ab04c.css",
+    "main.js": "/static/js/main.51298d5f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/Banner2.png": "/static/media/Banner2.26c54b9d1a44732e4715.png",
+    "static/media/Banner4.png": "/static/media/Banner4.1117da06b076e094b104.png",
+    "static/media/Banner3.png": "/static/media/Banner3.fc9baff4f744df2c6095.png",
+    "static/media/Banner1.png": "/static/media/Banner1.b810f47bc17516d52b15.png",
+    "static/media/Eccha-nir.jpg": "/static/media/Eccha-nir.ab3f141db9aacab569f6.jpg",
+    "index.html": "/index.html",
+    "main.e77ab04c.css.map": "/static/css/main.e77ab04c.css.map",
+    "main.51298d5f.js.map": "/static/js/main.51298d5f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e77ab04c.css",
+    "static/js/main.51298d5f.js"
+  ]
+}
