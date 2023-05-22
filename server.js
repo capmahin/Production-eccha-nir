@@ -6,6 +6,7 @@ import connectDB from './config/db.js';
 import authRoutes from './routes/authRoute.js';
 import categoryRoutes from './routes/categoryRoutes.js';
 import productRoutes from './routes/productRoutes.js';
+import bannerRoutes from './routes/bannerRoutes.js';
 import cors from 'cors';
 import path from 'path';
 import {fileURLToPath} from 'url';
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, './client/build')))
 app.use('/api/v1/auth',authRoutes);
 app.use('/api/v1/category',categoryRoutes);
 app.use('/api/v1/product',productRoutes);
+app.use('/api/v1/banner',bannerRoutes);
 
 // rest api
 app.use('*',function(req,res){
