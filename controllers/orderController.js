@@ -5,7 +5,7 @@ import fs from 'fs';
 
 export const createOrderController = async(req,res)=>{
     try {
-        const {name,slug,email,phone,bkash,category,quantity,shipping, address, currieraddress, size,serial,pobox} = req.fields;
+        const {name,slug,email,phone,category,quantity,shipping, address, currieraddress, size,serial,} = req.fields;
         const {photo} = req.files;
         //validation
         switch(true){
@@ -16,8 +16,7 @@ export const createOrderController = async(req,res)=>{
                 return res.status(500).send({error:'email required'})
             case !phone:
                 return res.status(500).send({error:'phone required'})
-            case !bkash:
-                return res.status(500).send({error:'bkash required'})
+            
             case !category:
                 return res.status(500).send({error:'Category required'})
             case !quantity:
@@ -30,8 +29,7 @@ export const createOrderController = async(req,res)=>{
                 return res.status(500).send({error:'size required'})
             case !serial:
                 return res.status(500).send({error:'serial required'})
-            case !pobox:
-                return res.status(500).send({error:'pobox required'})
+            
                 case photo && photo.size > 5000000:
                     return res
                       .status(500)
@@ -145,7 +143,7 @@ export const deleteOrderController = async(req,res)=>{
 
 export const updateOrderController = async(req,res)=>{
     try {
-        const {name,slug,email,phone,bkash,category,quantity,shipping, address, currieraddress, size,serial,pobox} = req.fields;
+        const {name,slug,email,phone,category,quantity,shipping, address, currieraddress, size,serial,} = req.fields;
         const {photo} = req.files;
         //validation
         switch(true){
@@ -156,8 +154,7 @@ export const updateOrderController = async(req,res)=>{
                 return res.status(500).send({error:'email required'})
             case !phone:
                 return res.status(500).send({error:'phone required'})
-            case !bkash:
-                return res.status(500).send({error:'bkash required'})
+            
             case !category:
                 return res.status(500).send({error:'Category required'})
             case !quantity:
@@ -170,8 +167,7 @@ export const updateOrderController = async(req,res)=>{
                 return res.status(500).send({error:'size required'})
                 case !serial:
                     return res.status(500).send({error:'serial required'})
-                case !pobox:
-                    return res.status(500).send({error:'pobox required'})
+                
                 case photo && photo.size > 5000000:
                     return res
                       .status(500)

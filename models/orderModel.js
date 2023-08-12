@@ -22,14 +22,18 @@ const orderSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    pobox:{
-        type:Number,
-        required:true
-    },
-    bkash:{
-        type:Number,
-        required:true
-    },
+
+
+    // pobox:{
+    //     type:Number,
+    //     required:true
+    // },
+    // bkash:{
+    //     type:Number,
+    //     required:true
+    // },
+
+    
     category:{
         type:mongoose.ObjectId,
         ref:'Category',
